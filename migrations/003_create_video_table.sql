@@ -4,7 +4,7 @@ CREATE TABLE video (
     travel_id BIGINT UNSIGNED,
     coordinates POINT NOT NULL,
     video_url VARCHAR(2083) NOT NULL,
-    thumbnail_url VARCHAR(2083) NOT NULL,
+    thumbnail_url VARCHAR(2083),
     title VARCHAR(255),
     description VARCHAR(255),
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
