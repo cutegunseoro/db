@@ -3,7 +3,7 @@ CREATE TABLE travel (
     member_id BIGINT UNSIGNED,
     start_datetime DATETIME NOT NULL,
     end_datetime DATETIME NOT NULL,
-    travel_description VARCHAR(255),
+    description VARCHAR(255),
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
     CONSTRAINT fk_member_id FOREIGN KEY (member_id) REFERENCES member(member_id) ON DELETE SET NULL,
     CONSTRAINT chk_datetime_range CHECK (end_datetime >= start_datetime),
