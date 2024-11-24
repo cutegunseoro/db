@@ -2,7 +2,7 @@ CREATE TABLE video (
     video_id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     member_id BIGINT UNSIGNED,
     travel_id BIGINT UNSIGNED,
-    coordinates POINT NOT NULL,
+    coordinates POINT NOT NULL SRID 4326,
     video_url VARCHAR(2083) NOT NULL,
     thumbnail_url VARCHAR(2083),
     title VARCHAR(255),
