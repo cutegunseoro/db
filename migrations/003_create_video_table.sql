@@ -5,6 +5,8 @@ CREATE TABLE video (
     coordinates POINT NOT NULL SRID 4326,
     video_s3_key VARCHAR(255),
     thumbnail_s3_key VARCHAR(255),
+    video_content_type VARCHAR(255),
+    thumbnail_content_type VARCHAR(255),
     title VARCHAR(255),
     description VARCHAR(255),
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
