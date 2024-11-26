@@ -10,4 +10,5 @@ CREATE TABLE travel (
     CONSTRAINT travel_chk_date_time_range CHECK (end_date_time >= start_date_time),
     INDEX idx_member_id (member_id),
     INDEX idx_date_time_range (start_date_time, end_date_time)
+    INDEX idx_end_date_time (end_date_time)
 );
