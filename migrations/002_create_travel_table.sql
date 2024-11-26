@@ -2,6 +2,7 @@ CREATE TABLE travel (
     travel_id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     member_id BIGINT UNSIGNED,
     title VARCHAR(255),
+    area VARCHAR(255),
     start_date_time DATETIME NOT NULL,
     end_date_time DATETIME NOT NULL,
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
